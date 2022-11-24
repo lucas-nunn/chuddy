@@ -5,17 +5,18 @@ body {
   font-family: "IBM Plex Mono", monospace;
 }
 
-#front-page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+#links {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: ghostwhite;
 }
 
-.center {
+.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 24px 0px;
 }
 
 .icon {
@@ -29,12 +30,12 @@ body {
 }
 
 #intro {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-grow: 1;
 }
 
 #intro > * {
@@ -50,21 +51,30 @@ body {
   font-size: large;
 }
 
-#contact form {
-  display: none;
+#scroll-container {
+  position: sticky;
+  top: 0;
+  bottom: 0;
 }
 
-#contact button {
-  margin: 0px;
+#scroll-container button, #links a {
+  -moz-transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s; 
 }
 
-#contact input {
-  background-color: transparent;
-  border: 1px solid grey;
-  border-radius: 2px;
-  padding: 12px;
+.flip {
+  transform: rotate(-180deg);
+}
+
+.trans-left {
+  transform: translate(-24px, 0px);
+}
+
+.trans-right {
+  transform: translate(24px, 0px);
 }
 
 #projects {
-  height: 100vh;
+  height: 200vh;
 }
