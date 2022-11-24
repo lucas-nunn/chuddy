@@ -5,20 +5,62 @@ body {
   font-family: "IBM Plex Mono", monospace;
 }
 
-.intro {
+#front-page {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
 }
 
-h1 {
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+#links > a {
+  margin: 24px; 
+  color: grey;
+}
+
+.hover-black > *:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+#intro > * {
+  padding: 12px;
+}
+
+#intro > h1 {
   font-size: xx-large;
   font-weight: bold;
 }
 
-p {
+#intro > p {
   font-size: large;
 }
+
+input {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 12px;
+}
+
+#scroll > button {
+  background-color: transparent;
+  border: none;
+  color: grey;
+  padding: 24px;
+}
+
