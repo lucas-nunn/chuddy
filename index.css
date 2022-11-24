@@ -18,12 +18,12 @@ body {
   padding: 24px;
 }
 
-#links > a {
+.icon {
   margin: 24px; 
   color: grey;
 }
 
-.hover-black > *:hover {
+.icon *:hover {
   color: black;
   cursor: pointer;
 }
@@ -38,29 +38,33 @@ body {
 }
 
 #intro > * {
-  padding: 12px;
+  margin: 12px;
 }
 
-#intro > h1 {
+#intro h1 {
   font-size: xx-large;
   font-weight: bold;
 }
 
-#intro > p {
+#intro p {
   font-size: large;
 }
 
-input {
+#contact form {
+  display: none;
+}
+
+#contact button {
+  margin: 0px;
+}
+
+#contact input {
   background-color: transparent;
   border: 1px solid grey;
   border-radius: 2px;
   padding: 12px;
 }
 
-#scroll > button {
-  background-color: transparent;
-  border: none;
-  color: grey;
-  padding: 24px;
+#projects {
+  height: 100vh;
 }
-

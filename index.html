@@ -11,7 +11,7 @@
   <body>
     <div id="front-page">
       <div id="links" class="center">
-        <a href="https://github.com/lucas-nunn" class="hover-black">
+        <a href="https://github.com/lucas-nunn" class="icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -29,7 +29,7 @@
             ></path>
           </svg>
         </a>
-        <a href="https://www.linkedin.com/in/lnunn/" class="hover-black">
+        <a href="https://www.linkedin.com/in/lnunn/" class="icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -56,17 +56,23 @@
           I'm a software engineer in Philadelphia. I like web dev and random
           software things
         </p>
-        <form>
-          <input type="text" />
-        </form>
+        <div id="contact">
+          <button class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </button>
+          <form>
+            <input type="text" />
+          </form>
+        </div>
       </div>
-      <div id="scroll" class="center">
-        <button class="hover-black">
+      <div class="center">
+        <button id="scroll" class="icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
           
         </button>
       </div>
     </div>
-    <div class="projects"></div>
+    <div id="projects"></div>
   </body>
+  <script src="index.js"></script>
 </html>
