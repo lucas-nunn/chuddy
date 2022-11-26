@@ -58,9 +58,9 @@ body {
 }
 
 #scroll-container button, #links a {
-  -moz-transition: transform 0.25s;
-  -webkit-transition: transform 0.25s;
-  transition: transform 0.25s; 
+  -moz-transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s; 
 }
 
 .flip {
