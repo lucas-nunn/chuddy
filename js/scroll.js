@@ -1,10 +1,3 @@
-/* contact button to open and use contact form */
-const contactOpen = document.getElementById("contact-open");
-const contact = document.getElementById("contact");
-contactOpen.onclick = () => {
-  contact.style.display = "flex"; 
-}
-
 /* ----- animate navbar items when scrolling ----- */
 const scroll= document.getElementById("scroll");
 const git = document.getElementById("git");

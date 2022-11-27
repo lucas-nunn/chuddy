@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chuddy</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/intro.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/projects.css" />
   </head>
-  <body>
-    <div id="main">
+  <body id="main">
+    <div>
       <div id="links" class="navbar">
         <a href="https://github.com/lucas-nunn" id="git" class="icon">
           <svg
@@ -56,7 +59,7 @@
           I'm a software engineer in Philadelphia - I like web dev and random
           software things
         </p>
-        <button id="contact-open" class="icon">
+        <button id="contact-open" type="button" class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
         </button>
       </div>
@@ -70,10 +73,16 @@
     </div>
     <div id="contact">
       <form>
-        <input type="text">
-        </input>
+        <label for="email">email</label>
+        <input id="email" name="email" autofocus class="input" type="text" placeholder="your email"/>
+        <label for="message">message</label>
+        <textarea id="message" name="message" class="input" rows="10" placeholder="whats up"></textarea>
+        <button id="send-message">
+          <span>send</span>
+        </button>
       </form> 
     </div>
   </body>
-  <script src="index.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/contact.js"></script>
 </html>

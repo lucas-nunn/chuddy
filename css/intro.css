@@ -1,15 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
-
-body {
-  background-color: ghostwhite;
-  font-family: "IBM Plex Mono", monospace;
-}
-
 #links {
-  position: fixed;
   top: 0;
+  position: fixed;
   width: 100%;
-  background-color: ghostwhite;
+  background-color: var(--white);
 }
 
 .navbar {
@@ -19,18 +12,8 @@ body {
   padding: 24px 0px;
 }
 
-.icon {
-  margin: 24px; 
-  color: grey;
-}
-
-.icon *:hover {
-  color: black;
-  cursor: pointer;
-}
-
 #intro {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,15 +23,6 @@ body {
 
 #intro > * {
   margin: 12px;
-}
-
-#intro h1 {
-  font-size: xx-large;
-  font-weight: bold;
-}
-
-#intro p {
-  font-size: large;
 }
 
 #scroll-container {
@@ -73,16 +47,4 @@ body {
 
 .trans-right {
   transform: translate(24px, 0px);
-}
-
-#projects {
-  height: 100vh;
-}
-
-#main {
-}
-
-#contact {
-  position: fixed;
-  top: 0;
 }
