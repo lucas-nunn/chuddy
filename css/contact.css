@@ -45,6 +45,10 @@
   width: 500px;
 }
 
+#form > .input:focus {
+  outline: var(--black) solid 1px;
+}
+
 #send-message {
   display: none;
   border-radius: 3px;

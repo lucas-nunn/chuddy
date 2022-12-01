@@ -29,9 +29,31 @@ contactOpen.onclick = () => {
 /* send message upon button click */
 sendMessage.onclick = (event) => {
   // emailjs API data
+  const URL = "https://api.emailjs.com/api/v1.0/email/send";
+
+  // if you are reading this I know you can steal and use my API keys
+  // if you do then you are a bum
   const data = {
-    service_id: "",
+    service_id: "default_service",
+    template_id: "template_i71q91o",
+    user_id: "T-p91i_grYBseQg2d",
+    template_params: {
+      email: email.value,
+      message: message.value,
+    },
   };
+
+  // hit the emailjs API
+  fetch(URL, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => console.log(response))
+    .catch((error) => console.log(error));
 };
 
 /* ----- validate input -----  */
