@@ -20,27 +20,27 @@
   margin: 0px;
 }
 
-#contact form {
+#form {
   padding: 48px;
   border-radius: 3px;
-  border: 1px solid var(--black);
   background-color: var(--white);
   display: flex;
   flex-direction: column;
   cursor: default;
 }
 
-#contact form > label {
+#form > label {
   padding: 12px 0px;
   font-weight: bold;
 }
 
-#contact form > .input {
+#form > .input {
+  font-family: inherit;
   padding: 12px;
   resize: none;
   border-radius: 3px;
-  border: 1px solid var(--black);
-  background-color: var(--white);
+  border: none;
+  background-color: var(--light);
   margin-bottom: 12px;
   width: 500px;
 }
@@ -51,7 +51,6 @@
   font-weight: bold;
   font-size: large;
   cursor: pointer;
-  border: 1px solid black;
   padding: 12px;
   margin-top: 32px;
 }
@@ -59,4 +58,3 @@
 #send-message:hover {
   background-color: var(--light);
 }
-

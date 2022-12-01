@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
 
 :root {
-  --black: #17202A;
-  --dark: #808B96;
-  --light: #D5D8DC;
-  --white: #EAECEE;
+  --black: #17202a;
+  --dark: #808b96;
+  --light: #d5d8dc;
+  --white: #eaecee;
 }
 
 body {
@@ -23,7 +23,7 @@ p {
 }
 
 .icon {
-  margin: 24px; 
+  margin: 24px;
   color: var(--dark);
 }
 

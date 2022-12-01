@@ -60,27 +60,61 @@
           software things
         </p>
         <button id="contact-open" type="button" class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-mail"
+          >
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            ></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
         </button>
       </div>
       <div id="scroll-container" class="navbar">
         <button id="scroll" class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
-          
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-arrow-down"
+          >
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <polyline points="19 12 12 19 5 12"></polyline>
+          </svg>
         </button>
       </div>
       <div id="projects"></div>
     </div>
     <div id="contact">
-      <form>
-        <label for="email">email</label>
-        <input id="email" name="email" autofocus class="input" type="text" placeholder="your email"/>
-        <label for="message">message</label>
-        <textarea id="message" name="message" class="input" rows="10" placeholder="whats up"></textarea>
-        <button id="send-message">
+      <div id="form">
+        <label>email</label>
+        <input id="email" class="input" type="text" placeholder="your email" />
+        <label>message</label>
+        <textarea
+          id="message"
+          class="input"
+          rows="10"
+          placeholder="whats up"
+        ></textarea>
+        <button id="send-message" type="button">
           <span>send</span>
         </button>
-      </form> 
+      </div>
     </div>
   </body>
   <script src="js/scroll.js"></script>

@@ -31,10 +31,11 @@
   bottom: 0;
 }
 
-#scroll-container button, #links a {
+#scroll-container button,
+#links a {
   -moz-transition: transform 0.2s;
   -webkit-transition: transform 0.2s;
-  transition: transform 0.2s; 
+  transition: transform 0.2s;
 }
 
 .flip {
