@@ -1,64 +1,70 @@
-#contact {
+#contact-popup {
+  z-index: 1;
   top: 0;
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   display: none;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-#contact nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#contact .icon {
-  margin: 0px;
-}
-
-#form {
+#contact-form,
+#loader,
+#success-message,
+#failure-message {
   padding: 48px;
   border-radius: 3px;
   background-color: var(--white);
-  display: flex;
-  flex-direction: column;
   cursor: default;
 }
 
-#form > label {
-  padding: 12px 0px;
-  font-weight: bold;
+#contact-form {
+  display: flex;
+  flex-direction: column;
 }
 
-#form > .input {
-  font-family: inherit;
+#contact-form > label {
+  padding: 12px 0px;
+  font-weight: bold;
+  font-size: large;
+}
+
+#contact-form > .input {
   padding: 12px;
-  resize: none;
+  margin-bottom: 12px;
+  width: 500px;
   border-radius: 3px;
   border: none;
   background-color: var(--light);
-  margin-bottom: 12px;
-  width: 500px;
+  resize: none;
+  font-family: inherit;
+  font-size: large;
 }
 
-#form > .input:focus {
+#contact-form > .input:focus {
   outline: var(--black) solid 1px;
 }
 
 #send-message {
   display: none;
+  padding: 12px;
+  margin-top: 32px;
   border-radius: 3px;
   font-weight: bold;
   font-size: large;
   cursor: pointer;
-  padding: 12px;
-  margin-top: 32px;
 }
 
 #send-message:hover {
   background-color: var(--light);
+}
+
+#loader,
+#success-message,
+#failure-message {
+  display: none;
+  width: 500px;
 }

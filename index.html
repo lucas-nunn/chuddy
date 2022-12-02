@@ -4,13 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chuddy</title>
+    <title>chuddy</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/intro.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/projects.css" />
   </head>
+  <div id="contact-popup">
+    <div id="contact-form">
+      <label for="email-input">email</label>
+      <input
+        id="email-input"
+        class="input"
+        type="text"
+        placeholder="what's your email?"
+      />
+      <label for="message-input">message</label>
+      <textarea
+        id="message-input"
+        class="input"
+        rows="10"
+        placeholder="whats up?"
+      ></textarea>
+      <button id="send-message" type="button">
+        <span>send</span>
+      </button>
+    </div>
+    <div id="loader">
+      <span>loading</span>
+    </div>
+    <div id="success-message">
+      <span>success</span>
+    </div>
+    <div id="failure-message">
+      <span>failure</span>
+    </div>
+  </div>
   <body id="main">
     <div>
       <div id="links" class="navbar">
@@ -99,22 +129,6 @@
         </button>
       </div>
       <div id="projects"></div>
-    </div>
-    <div id="contact">
-      <div id="form">
-        <label>email</label>
-        <input id="email" class="input" type="text" placeholder="your email" />
-        <label>message</label>
-        <textarea
-          id="message"
-          class="input"
-          rows="10"
-          placeholder="whats up?"
-        ></textarea>
-        <button id="send-message" type="button">
-          <span>send</span>
-        </button>
-      </div>
     </div>
   </body>
   <script src="js/scroll.js"></script>
